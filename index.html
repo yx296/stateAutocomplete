@@ -9,8 +9,8 @@
 <body ng-app="stateAutocomplete">
   <div  ng-controller="stateAutocompleteCtrl" class="container">
     <input ng-model="stateInput" class="autocomplete"></input>
-    <ul ng-repeat="state in filteredStates">
-      <li>{{state}}</li>
+    <ul>
+      <li ng-repeat="state in filteredStates">{{state}}</li>
     </ul>
   </div>
   <script src="app.js"></script>
