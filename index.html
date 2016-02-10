@@ -7,12 +7,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
 <body ng-app="stateAutocomplete">
-  <div  ng-controller="stateAutocompleteCtrl as vm" class="container">
-    <input ng-model="vm.input" class="autocomplete"></input>
-    <ul>
-      <li ng-repeat="state in vm.filteredStates">{{state}}</li>
-    </ul>
-  </div>
+  <stateAutocomplete></stateAutocomplete>
+
+
+  
   <!-- javascripts -->
   <script src="app.js"></script>
 </body>
