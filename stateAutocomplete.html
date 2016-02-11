@@ -1,5 +1,5 @@
 <div>
-  <input ng-model="vm.input"></input>
+  <input ng-model="vm.input" ng-change="vm.filterStates()"></input>
   <ul>
     <li ng-repeat="state in vm.filteredStates">{{state}}</li>
   </ul>
