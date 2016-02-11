@@ -4,17 +4,18 @@
   <meta charset="UTF-8">
   <title>stateAutocomplete</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="app.js"></script>
 </head>
+
 <body ng-app="stateAutocomplete">
-  <div  ng-controller="stateAutocompleteCtrl as vm">
+  <div ng-controller="stateAutocompleteCtrl as vm">
     <input ng-model="vm.input" ng-change="vm.filterStates()"></input>
     <ul>
       <li ng-repeat="state in vm.filteredStates">{{state}}</li>
     </ul>
   </div>
-  <!-- javascripts -->
-  <script src="app.js"></script>
 </body>
+
 </html>
 
 
