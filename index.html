@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>stateAutocomplete</title>
-  <link rel="stylesheet" href="styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="app.js"></script>
 </head>
+
 <body ng-app="stateAutocomplete">
   <div  ng-controller="stateAutocompleteCtrl as vm" class="container">
     <input ng-model="vm.query" class="autocomplete"></input>
     <ul>
-      <li ng-repeat="state in vm.filteredStates | filter:vm.query">{{state}}</li>
+      <li ng-repeat="state in vm.states | filter:vm.query">{{state}}</li>
     </ul>
   </div>
-  <!-- javascripts -->
-  <script src="app.js"></script>
 </body>
+
 </html>
 
 
