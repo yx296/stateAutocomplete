@@ -6,6 +6,7 @@ angular.module('stateAutocomplete', [])
   return {
     restrict: 'E',
     scope: {},
+    replace: true,
     controller: function($scope) {
       var vm = this;
 
